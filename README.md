@@ -3,7 +3,7 @@
             <div class="htmledit_views">
                 
 <p style="margin-top:0px; margin-bottom:1.7em; padding-top:0px; padding-bottom:0px; line-height:27.2px; color:rgb(63,63,63); font-family:&quot;microsoft yahei&quot;; font-size:16px">
-这个案例跟推荐系统相关，预测用户可能感兴趣的event。关于这个案例更多信息打开<a target="_blank" href="https://www.kaggle.com/c/event-recommendation-engine-challenge/data" style="color:rgb(12,137,207)">event_recommendation_competition</a>。这里我直接讲解第一名的解决方案。<span style="">解决思路</p>
+这个案例跟推荐系统相关，预测用户可能感兴趣的event。关于这个案例更多信息打开<a target="_blank" href="https://www.kaggle.com/c/event-recommendation-engine-challenge/data" style="color:rgb(12,137,207)">event_recommendation_competition</a>。<span style="">解决思路</p>
 <p style="margin-top:0px; margin-bottom:1.7em; padding-top:0px; padding-bottom:0px; line-height:27.2px; color:rgb(63,63,63); font-family:&quot;microsoft yahei&quot;; font-size:16px">
 首先看看比赛给的数据：train,test,users,events,user_friends,attendees这六张表。详细的数据描述请打开上面链接查看。</p>
 <p style="margin-top:0px; margin-bottom:1.7em; padding-top:0px; padding-bottom:0px; line-height:27.2px; color:rgb(63,63,63); font-family:&quot;microsoft yahei&quot;; font-size:16px">
