@@ -142,20 +142,4 @@ eventPopularity :dok_matrix形式，shape[len(events),1)],将event表中yes列�
   在我们得到的特征上训练分类器，target为1(感兴趣)，或者是0(不感兴趣)
 我们再用学习曲线看看是否过拟合还是前拟合</p>
 
-<span class="hljs-function" style="box-sizing: border-box;"><span class="hljs-keyword" style="color: rgb(0, 0, 136); box-sizing: border-box;">def</span> <span class="hljs-title" style="box-sizing: border-box;">plot_learning_curve</span><span class="hljs-params" style="color: rgb(102, 0, 102); box-sizing: border-box;">(estimator, title, X, y, ylim=None, cv=None, n_jobs=<span class="hljs-number" style="color: rgb(0, 102, 102); box-sizing: border-box;">1</span>, 
-                        train_sizes=np.linspace<span class="hljs-params" style="box-sizing: border-box;">(<span class="hljs-number" style="color: rgb(0, 102, 102); box-sizing: border-box;">.05</span>, <span class="hljs-number" style="color: rgb(0, 102, 102); box-sizing: border-box;">1.</span>, <span class="hljs-number" style="color: rgb(0, 102, 102); box-sizing: border-box;">20</span>)</span>, verbose=<span class="hljs-number" style="color: rgb(0, 102, 102); box-sizing: border-box;">0</span>, plot=True)</span>:</span>
-    <span class="hljs-string" style="color: rgb(0, 136, 0); box-sizing: border-box;">"""
-    画出data在某模型上的learning curve.
-    参数解释
-    ----------
-    estimator : 你用的分类器。
-    title : 表格的标题。
-    X : 输入的feature，numpy类型
-    y : 输入的target vector
-    ylim : tuple格式的(ymin, ymax), 设定图像中纵坐标的最低点和最高点
-    cv : 做cross-validation的时候，数据分成的份数，其中一份作为cv集，其余n-1份作为training(默认为3份)
-    n_jobs : 并行的的任务数(默认1)
-    """</span>
-    train_sizes, train_scores, test_scores = learning_curve(
-        estimator, X, y, cv=cv, n_jobs=n_jobs, train_sizes=train_sizes, verbose=verbose)
 
