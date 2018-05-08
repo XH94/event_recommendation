@@ -3,7 +3,7 @@
             <div class="htmledit_views">
                 
 <p style="margin-top:0px; margin-bottom:1.7em; padding-top:0px; padding-bottom:0px; line-height:27.2px; color:rgb(63,63,63); font-family:&quot;microsoft yahei&quot;; font-size:16px">
-这个案例跟推荐系统相关，预测用户可能感兴趣的event。关于这个案例更多信息打开<a target="_blank" href="https://www.kaggle.com/c/event-recommendation-engine-challenge/data" style="color:rgb(12,137,207)">event_recommendation_competition</a>。这里我直接讲解第一名的解决方案。<span style="">这个方案中除了包含经典的机器学习解决步骤，还融合了推荐系统里传统的解决方法：基于用户的协同过滤，基于物品的协同过滤，当然也可以融合LFM模型等等</span>，因为这个解决方案很经典，所以我觉得值得拿出来详细讲讲。我将贴出完整代码，并且进行很详细的讲解。</p>
+这个案例跟推荐系统相关，预测用户可能感兴趣的event。关于这个案例更多信息打开<a target="_blank" href="https://www.kaggle.com/c/event-recommendation-engine-challenge/data" style="color:rgb(12,137,207)">event_recommendation_competition</a>。这里我直接讲解第一名的解决方案。<span style="">解决思路</p>
 <p style="margin-top:0px; margin-bottom:1.7em; padding-top:0px; padding-bottom:0px; line-height:27.2px; color:rgb(63,63,63); font-family:&quot;microsoft yahei&quot;; font-size:16px">
 首先看看比赛给的数据：train,test,users,events,user_friends,attendees这六张表。详细的数据描述请打开上面链接查看。</p>
 <p style="margin-top:0px; margin-bottom:1.7em; padding-top:0px; padding-bottom:0px; line-height:27.2px; color:rgb(63,63,63); font-family:&quot;microsoft yahei&quot;; font-size:16px">
